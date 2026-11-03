@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -7,15 +6,9 @@
   <meta name="description" content="مطعم أبو سامي - أشهى المأكولات السريعة وخدمة توصيل مميزة" />
   <title>مطعم أبو سامي | أشهى المأكولات السريعة</title>
 
-  <!-- خط عربي -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- تنسيق فقاعة المحادثة -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
   <style>
@@ -43,7 +36,7 @@
     }
 
     body {
-      font-family: "Cairo", sans-serif;
+      font-family: "Cairo", "Tahoma", "Arial", sans-serif;
       background: #ffffff;
       color: var(--text);
       line-height: 1.8;
@@ -64,7 +57,6 @@
       margin: auto;
     }
 
-    /* شريط التنقل */
     header {
       position: absolute;
       top: 0;
@@ -126,7 +118,6 @@
       font-weight: 800;
     }
 
-    /* القسم الرئيسي */
     .hero {
       min-height: 720px;
       display: flex;
@@ -235,7 +226,6 @@
       color: var(--dark);
     }
 
-    /* العناوين */
     .section {
       padding: 90px 0;
     }
@@ -266,7 +256,6 @@
       color: var(--gray);
     }
 
-    /* شريط المميزات */
     .features-bar {
       position: relative;
       z-index: 2;
@@ -312,7 +301,6 @@
       font-size: 0.85rem;
     }
 
-    /* الخدمات */
     .services {
       background: var(--light);
     }
@@ -361,7 +349,6 @@
       font-size: 0.9rem;
     }
 
-    /* قسم التواصل */
     .contact-section {
       padding: 90px 0;
       background: #fff;
@@ -474,7 +461,6 @@
       width: 100%;
     }
 
-    /* الفوتر */
     footer {
       padding: 25px 0;
       background: var(--dark);
@@ -491,7 +477,6 @@
       color: var(--secondary);
     }
 
-    /* استجابة الشاشات الصغيرة */
     @media (max-width: 900px) {
       .services-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -503,79 +488,35 @@
     }
 
     @media (max-width: 700px) {
-      header {
-        padding: 13px 0;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      .logo {
-        font-size: 1.1rem;
-      }
-
-      .logo-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 1.25rem;
-      }
-
-      .hero {
-        min-height: 650px;
-      }
-
-      .hero-content {
-        padding-top: 80px;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
+      header { padding: 13px 0; }
+      .nav-links { display: none; }
+      .logo { font-size: 1.1rem; }
+      .logo-icon { width: 40px; height: 40px; font-size: 1.25rem; }
+      .hero { min-height: 650px; }
+      .hero-content { padding-top: 80px; }
+      .hero p { font-size: 1rem; }
       .features-wrapper {
         grid-template-columns: 1fr;
         gap: 6px;
         padding: 18px;
       }
-
-      .section,
-      .contact-section {
-        padding: 65px 0;
-      }
+      .section, .contact-section { padding: 65px 0; }
     }
 
     @media (max-width: 480px) {
-      .container {
-        width: min(100% - 28px, 1120px);
-      }
-
-      .hero h1 {
-        font-size: 2.25rem;
-      }
-
+      .container { width: min(100% - 28px, 1120px); }
+      .hero h1 { font-size: 2.25rem; }
       .hero-buttons {
         flex-direction: column;
         align-items: stretch;
       }
-
-      .hero-buttons .button {
-        width: 100%;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-form {
-        padding: 22px 17px;
-      }
+      .hero-buttons .button { width: 100%; }
+      .services-grid { grid-template-columns: 1fr; }
+      .contact-form { padding: 22px 17px; }
     }
   </style>
 </head>
-
 <body>
-  <!-- شريط التنقل -->
   <header>
     <div class="container">
       <nav class="navbar">
@@ -594,7 +535,6 @@
     </div>
   </header>
 
-  <!-- القسم الترحيبي -->
   <main>
     <section class="hero" id="home">
       <div class="container">
@@ -619,7 +559,6 @@
       </div>
     </section>
 
-    <!-- المميزات -->
     <section class="features-bar">
       <div class="container">
         <div class="features-wrapper">
@@ -650,15 +589,12 @@
       </div>
     </section>
 
-    <!-- قسم الخدمات -->
     <section class="section services" id="services">
       <div class="container">
         <div class="section-heading">
           <small>شو بتحب تاكل اليوم؟</small>
           <h2>أصناف شهية لكل الأذواق</h2>
-          <p>
-            اختر وجبتك المفضلة واستمتع بمذاق رائع وجودة عالية في كل لقمة.
-          </p>
+          <p>اختر وجبتك المفضلة واستمتع بمذاق رائع وجودة عالية في كل لقمة.</p>
         </div>
 
         <div class="services-grid">
@@ -689,15 +625,12 @@
       </div>
     </section>
 
-    <!-- قسم التواصل -->
     <section class="contact-section" id="contact">
       <div class="container">
         <div class="contact-wrapper">
           <div class="contact-info">
             <h2>جاهز تطلب وجبتك؟</h2>
-            <p>
-              تواصل معنا الآن، وفريقنا جاهز يستقبل طلبك ويقدملك أفضل خدمة.
-            </p>
+            <p>تواصل معنا الآن، وفريقنا جاهز يستقبل طلبك ويقدملك أفضل خدمة.</p>
 
             <ul class="contact-list">
               <li>
@@ -736,52 +669,36 @@
 
             <div class="form-group">
               <label for="phone">رقم الهاتف</label>
-              <input
-                type="tel"
-                id="phone"
-                placeholder="اكتب رقم هاتفك"
-                required
-              />
+              <input type="tel" id="phone" placeholder="اكتب رقم هاتفك" required />
             </div>
 
             <div class="form-group">
               <label for="message">رسالتك</label>
-              <textarea
-                id="message"
-                placeholder="اكتب طلبك أو استفسارك هنا..."
-                required
-              ></textarea>
+              <textarea id="message" placeholder="اكتب طلبك أو استفسارك هنا..." required></textarea>
             </div>
 
-            <button type="submit" class="button button-primary">
-              إرسال الرسالة
-            </button>
+            <button type="submit" class="button button-primary">إرسال الرسالة</button>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- الفوتر -->
   <footer>
     <div class="container">
-      <p>
-        جميع الحقوق محفوظة © 2026 <strong>مطعم أبو سامي</strong>
-      </p>
+      <p>جميع الحقوق محفوظة © 2026 <strong>مطعم أبو سامي</strong></p>
     </div>
   </footer>
 
-  <!-- فقاعة المحادثة من n8n -->
   <script type="module">
-    import { createChat } from 
+    import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.js";
 
     createChat({
-      webhookUrl: "https://wert123-fd.app.n8n.cloud/webhook/b3727c65-895d-4738-9c2c-5efd47dfb258/chat"
+      webhookUrl: "https://wert123-fd.app.n8n.cloud/webhook/b3727c65-895d-4738-9c2c-5efd47dfb258/chat",
       initialMessages: [
         "أهلاً وسهلاً 👋",
         "كيف أقدر أساعدك اليوم؟"
       ],
-
       i18n: {
         en: {
           title: "أهلاً بك 👋",
@@ -801,15 +718,10 @@
       const phone = document.getElementById("phone").value;
       const message = document.getElementById("message").value;
 
-      alert(
-        "شكراً لك يا " +
-          name +
-          "، تم استلام رسالتك وسنتواصل معك قريباً."
-      );
+      alert("شكراً لك يا " + name + "، تم استلام رسالتك وسنتواصل معك قريباً.");
 
       event.target.reset();
     }
   </script>
 </body>
 </html>
-```
